@@ -1,4 +1,4 @@
 /home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles/rebuild_cache.dir
 /home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles/edit_cache.dir
 /home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles/JPARC_E16_GPD.dir
-/home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles/project.dir
+/home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles/jparc.dir

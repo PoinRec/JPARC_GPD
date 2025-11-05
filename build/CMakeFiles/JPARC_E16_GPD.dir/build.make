@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/zhihao/JPARC_E16_GPD/project/build
 # Include the progress variables for this target.
 include CMakeFiles/JPARC_E16_GPD.dir/progress.make
 
-CMakeFiles/JPARC_E16_GPD: project
+CMakeFiles/JPARC_E16_GPD: jparc
 
 
 JPARC_E16_GPD: CMakeFiles/JPARC_E16_GPD

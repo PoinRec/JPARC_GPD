@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/zhihao/JPARC_E16_GPD/project/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/project.dir/all
+all: CMakeFiles/jparc.dir/all
 
 .PHONY : all
 
@@ -64,7 +64,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/JPARC_E16_GPD.dir/clean
-clean: CMakeFiles/project.dir/clean
+clean: CMakeFiles/jparc.dir/clean
 
 .PHONY : clean
 
@@ -72,7 +72,7 @@ clean: CMakeFiles/project.dir/clean
 # Target rules for target CMakeFiles/JPARC_E16_GPD.dir
 
 # All Build rule for target.
-CMakeFiles/JPARC_E16_GPD.dir/all: CMakeFiles/project.dir/all
+CMakeFiles/JPARC_E16_GPD.dir/all: CMakeFiles/jparc.dir/all
 	$(MAKE) -f CMakeFiles/JPARC_E16_GPD.dir/build.make CMakeFiles/JPARC_E16_GPD.dir/depend
 	$(MAKE) -f CMakeFiles/JPARC_E16_GPD.dir/build.make CMakeFiles/JPARC_E16_GPD.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles --progress-num= "Built target JPARC_E16_GPD"
@@ -96,31 +96,31 @@ CMakeFiles/JPARC_E16_GPD.dir/clean:
 .PHONY : CMakeFiles/JPARC_E16_GPD.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/project.dir
+# Target rules for target CMakeFiles/jparc.dir
 
 # All Build rule for target.
-CMakeFiles/project.dir/all:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/depend
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target project"
-.PHONY : CMakeFiles/project.dir/all
+CMakeFiles/jparc.dir/all:
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/depend
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target jparc"
+.PHONY : CMakeFiles/jparc.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/project.dir/rule: cmake_check_build_system
+CMakeFiles/jparc.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/project.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/jparc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhihao/JPARC_E16_GPD/project/build/CMakeFiles 0
-.PHONY : CMakeFiles/project.dir/rule
+.PHONY : CMakeFiles/jparc.dir/rule
 
 # Convenience name for target.
-project: CMakeFiles/project.dir/rule
+jparc: CMakeFiles/jparc.dir/rule
 
-.PHONY : project
+.PHONY : jparc
 
 # clean rule for target.
-CMakeFiles/project.dir/clean:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/clean
-.PHONY : CMakeFiles/project.dir/clean
+CMakeFiles/jparc.dir/clean:
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/clean
+.PHONY : CMakeFiles/jparc.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

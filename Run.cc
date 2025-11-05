@@ -8,7 +8,7 @@ MyRunAction::~MyRunAction() {
 
 void MyRunAction::BeginOfRunAction(const G4Run *) {
   G4AnalysisManager *manager = G4AnalysisManager::Instance();
-  manager->OpenFile("output.root");
+  manager->OpenFile("output_10.root");
   manager->CreateNtuple("ParticleData", "Track and Energy");
   manager->CreateNtupleIColumn("EventID");
   manager->CreateNtupleIColumn("PDGCode");

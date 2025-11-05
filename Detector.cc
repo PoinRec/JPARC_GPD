@@ -14,7 +14,8 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
   G4int pdgCode = particle->GetPDGEncoding();
   G4int trackID = track->GetTrackID();
   G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
-  if (pdgCode < 10000) {
+  
+  if (pdgCode < 10000 && pdgCode > -10000) {
   manager->FillNtupleIColumn(0, eventID);
   manager->FillNtupleIColumn(1, pdgCode);
   manager->FillNtupleIColumn(2, trackID);

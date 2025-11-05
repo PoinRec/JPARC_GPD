@@ -124,17 +124,17 @@ JPARC_E16_GPD/fast:
 .PHONY : JPARC_E16_GPD/fast
 
 #=============================================================================
-# Target rules for targets named project
+# Target rules for targets named jparc
 
 # Build rule for target.
-project: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 project
-.PHONY : project
+jparc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jparc
+.PHONY : jparc
 
 # fast build rule for target.
-project/fast:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/build
-.PHONY : project/fast
+jparc/fast:
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/build
+.PHONY : jparc/fast
 
 Action.o: Action.cc.o
 
@@ -142,7 +142,7 @@ Action.o: Action.cc.o
 
 # target to build an object file
 Action.cc.o:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Action.cc.o
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Action.cc.o
 .PHONY : Action.cc.o
 
 Action.i: Action.cc.i
@@ -151,7 +151,7 @@ Action.i: Action.cc.i
 
 # target to preprocess a source file
 Action.cc.i:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Action.cc.i
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Action.cc.i
 .PHONY : Action.cc.i
 
 Action.s: Action.cc.s
@@ -160,7 +160,7 @@ Action.s: Action.cc.s
 
 # target to generate assembly for a file
 Action.cc.s:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Action.cc.s
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Action.cc.s
 .PHONY : Action.cc.s
 
 Detector.o: Detector.cc.o
@@ -169,7 +169,7 @@ Detector.o: Detector.cc.o
 
 # target to build an object file
 Detector.cc.o:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Detector.cc.o
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Detector.cc.o
 .PHONY : Detector.cc.o
 
 Detector.i: Detector.cc.i
@@ -178,7 +178,7 @@ Detector.i: Detector.cc.i
 
 # target to preprocess a source file
 Detector.cc.i:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Detector.cc.i
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Detector.cc.i
 .PHONY : Detector.cc.i
 
 Detector.s: Detector.cc.s
@@ -187,7 +187,7 @@ Detector.s: Detector.cc.s
 
 # target to generate assembly for a file
 Detector.cc.s:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Detector.cc.s
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Detector.cc.s
 .PHONY : Detector.cc.s
 
 DetectorConstruction.o: DetectorConstruction.cc.o
@@ -196,7 +196,7 @@ DetectorConstruction.o: DetectorConstruction.cc.o
 
 # target to build an object file
 DetectorConstruction.cc.o:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/DetectorConstruction.cc.o
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/DetectorConstruction.cc.o
 .PHONY : DetectorConstruction.cc.o
 
 DetectorConstruction.i: DetectorConstruction.cc.i
@@ -205,7 +205,7 @@ DetectorConstruction.i: DetectorConstruction.cc.i
 
 # target to preprocess a source file
 DetectorConstruction.cc.i:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/DetectorConstruction.cc.i
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/DetectorConstruction.cc.i
 .PHONY : DetectorConstruction.cc.i
 
 DetectorConstruction.s: DetectorConstruction.cc.s
@@ -214,7 +214,7 @@ DetectorConstruction.s: DetectorConstruction.cc.s
 
 # target to generate assembly for a file
 DetectorConstruction.cc.s:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/DetectorConstruction.cc.s
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/DetectorConstruction.cc.s
 .PHONY : DetectorConstruction.cc.s
 
 Generator.o: Generator.cc.o
@@ -223,7 +223,7 @@ Generator.o: Generator.cc.o
 
 # target to build an object file
 Generator.cc.o:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Generator.cc.o
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Generator.cc.o
 .PHONY : Generator.cc.o
 
 Generator.i: Generator.cc.i
@@ -232,7 +232,7 @@ Generator.i: Generator.cc.i
 
 # target to preprocess a source file
 Generator.cc.i:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Generator.cc.i
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Generator.cc.i
 .PHONY : Generator.cc.i
 
 Generator.s: Generator.cc.s
@@ -241,7 +241,7 @@ Generator.s: Generator.cc.s
 
 # target to generate assembly for a file
 Generator.cc.s:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Generator.cc.s
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Generator.cc.s
 .PHONY : Generator.cc.s
 
 Run.o: Run.cc.o
@@ -250,7 +250,7 @@ Run.o: Run.cc.o
 
 # target to build an object file
 Run.cc.o:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Run.cc.o
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Run.cc.o
 .PHONY : Run.cc.o
 
 Run.i: Run.cc.i
@@ -259,7 +259,7 @@ Run.i: Run.cc.i
 
 # target to preprocess a source file
 Run.cc.i:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Run.cc.i
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Run.cc.i
 .PHONY : Run.cc.i
 
 Run.s: Run.cc.s
@@ -268,35 +268,35 @@ Run.s: Run.cc.s
 
 # target to generate assembly for a file
 Run.cc.s:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/Run.cc.s
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/Run.cc.s
 .PHONY : Run.cc.s
 
-project.o: project.cc.o
+jparc.o: jparc.cc.o
 
-.PHONY : project.o
+.PHONY : jparc.o
 
 # target to build an object file
-project.cc.o:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/project.cc.o
-.PHONY : project.cc.o
+jparc.cc.o:
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/jparc.cc.o
+.PHONY : jparc.cc.o
 
-project.i: project.cc.i
+jparc.i: jparc.cc.i
 
-.PHONY : project.i
+.PHONY : jparc.i
 
 # target to preprocess a source file
-project.cc.i:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/project.cc.i
-.PHONY : project.cc.i
+jparc.cc.i:
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/jparc.cc.i
+.PHONY : jparc.cc.i
 
-project.s: project.cc.s
+jparc.s: jparc.cc.s
 
-.PHONY : project.s
+.PHONY : jparc.s
 
 # target to generate assembly for a file
-project.cc.s:
-	$(MAKE) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/project.cc.s
-.PHONY : project.cc.s
+jparc.cc.s:
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/jparc.cc.s
+.PHONY : jparc.cc.s
 
 # Help Target
 help:
@@ -307,7 +307,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... JPARC_E16_GPD"
-	@echo "... project"
+	@echo "... jparc"
 	@echo "... Action.o"
 	@echo "... Action.i"
 	@echo "... Action.s"
@@ -323,9 +323,9 @@ help:
 	@echo "... Run.o"
 	@echo "... Run.i"
 	@echo "... Run.s"
-	@echo "... project.o"
-	@echo "... project.i"
-	@echo "... project.s"
+	@echo "... jparc.o"
+	@echo "... jparc.i"
+	@echo "... jparc.s"
 .PHONY : help
 
 

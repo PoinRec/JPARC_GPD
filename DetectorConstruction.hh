@@ -12,6 +12,8 @@
 
 #include "G4RotationMatrix.hh"
 
+#include "Detector.hh"
+
 class MyDetectorConstruction: public G4VUserDetectorConstruction {
   public:
     MyDetectorConstruction();
@@ -21,6 +23,7 @@ class MyDetectorConstruction: public G4VUserDetectorConstruction {
 
   private:
     G4LogicalVolume *logicDetector;
+    virtual void ConstructSDandField();
 };
 
 #endif

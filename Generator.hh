@@ -13,6 +13,8 @@ class MyGenerator : public G4VUserPrimaryGeneratorAction {
     ~MyGenerator();
 
     virtual void GeneratePrimaries(G4Event*);
+  private:
+    G4ParticleGun *fParticleGun;
 };
 
 #endif
