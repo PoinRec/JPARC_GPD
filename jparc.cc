@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
   
   runManager->Initialize();
 
-  runManager->BeamOn(10);
+  runManager->BeamOn(10000);
 
   delete runManager;
   return 0;

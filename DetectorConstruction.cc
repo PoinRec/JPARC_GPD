@@ -22,13 +22,13 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct() {
   G4Material *detector_mat = nist->FindOrBuildMaterial("G4_AIR");
 
   G4double FT1_size_X = 640.0 * mm;
-  G4double FT1_size_Y = 670 * mm;
+  G4double FT1_size_Y = 670.0 * mm;
 
-  G4double Detector_size_Z = 20 * mm;
+  G4double Detector_size_Z = 20.0 * mm;
 
   auto solidDetector = new G4Box("Detector", 0.5 * FT1_size_X, 0.5 * FT1_size_Y, 0.5 * Detector_size_Z);
   logicDetector = new G4LogicalVolume(solidDetector, detector_mat, "Detector");
-  auto physDetector = new G4PVPlacement(nullptr, G4ThreeVector(0, 0, -9 * m), logicDetector, "Detector", logicWorld, false, 0, true);
+  auto physDetector = new G4PVPlacement(nullptr, G4ThreeVector(0.0, 0.0, -9.0 * m), logicDetector, "Detector", logicWorld, false, 0, true);
 
   return physWorld;
 }
