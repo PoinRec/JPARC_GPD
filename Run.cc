@@ -9,7 +9,9 @@ MyRunAction::~MyRunAction() {
 void MyRunAction::BeginOfRunAction(const G4Run *) {
   G4AnalysisManager *manager = G4AnalysisManager::Instance();
   manager->OpenFile("output_JAM2.root");
-  manager->CreateNtuple("ParticleData", "Track and Energy");
+  
+  // FT1 ntuple
+  manager->CreateNtuple("FT1", "FT1 Track and Energy");
   manager->CreateNtupleIColumn("EventID");
   manager->CreateNtupleIColumn("PDGCode");
   manager->CreateNtupleIColumn("TrackID");
@@ -18,6 +20,60 @@ void MyRunAction::BeginOfRunAction(const G4Run *) {
   manager->CreateNtupleDColumn("y_mm");
   manager->CreateNtupleDColumn("z_mm");
   // Momentum at sensitive detector entrance (GeV/c)
+  manager->CreateNtupleDColumn("px_GeV");
+  manager->CreateNtupleDColumn("py_GeV");
+  manager->CreateNtupleDColumn("pz_GeV");
+  manager->FinishNtuple();
+  
+  // FT2 ntuple
+  manager->CreateNtuple("FT2", "FT2 Track and Energy");
+  manager->CreateNtupleIColumn("EventID");
+  manager->CreateNtupleIColumn("PDGCode");
+  manager->CreateNtupleIColumn("TrackID");
+  // Position at sensitive detector entrance (mm)
+  manager->CreateNtupleDColumn("x_mm");
+  manager->CreateNtupleDColumn("y_mm");
+  manager->CreateNtupleDColumn("z_mm");
+  // Momentum at sensitive detector entrance (GeV/c)
+  manager->CreateNtupleDColumn("px_GeV");
+  manager->CreateNtupleDColumn("py_GeV");
+  manager->CreateNtupleDColumn("pz_GeV");
+  manager->FinishNtuple();
+
+  // DC1 ntuple
+  manager->CreateNtuple("DC1", "DC1 Track and Energy");
+  manager->CreateNtupleIColumn("EventID");
+  manager->CreateNtupleIColumn("PDGCode");
+  manager->CreateNtupleIColumn("TrackID");
+  manager->CreateNtupleDColumn("x_mm");
+  manager->CreateNtupleDColumn("y_mm");
+  manager->CreateNtupleDColumn("z_mm");
+  manager->CreateNtupleDColumn("px_GeV");
+  manager->CreateNtupleDColumn("py_GeV");
+  manager->CreateNtupleDColumn("pz_GeV");
+  manager->FinishNtuple();
+
+  // DC2 ntuple
+  manager->CreateNtuple("DC2", "DC2 Track and Energy");
+  manager->CreateNtupleIColumn("EventID");
+  manager->CreateNtupleIColumn("PDGCode");
+  manager->CreateNtupleIColumn("TrackID");
+  manager->CreateNtupleDColumn("x_mm");
+  manager->CreateNtupleDColumn("y_mm");
+  manager->CreateNtupleDColumn("z_mm");
+  manager->CreateNtupleDColumn("px_GeV");
+  manager->CreateNtupleDColumn("py_GeV");
+  manager->CreateNtupleDColumn("pz_GeV");
+  manager->FinishNtuple();
+
+  // RICH ntuple
+  manager->CreateNtuple("RICH", "RICH Track and Energy");
+  manager->CreateNtupleIColumn("EventID");
+  manager->CreateNtupleIColumn("PDGCode");
+  manager->CreateNtupleIColumn("TrackID");
+  manager->CreateNtupleDColumn("x_mm");
+  manager->CreateNtupleDColumn("y_mm");
+  manager->CreateNtupleDColumn("z_mm");
   manager->CreateNtupleDColumn("px_GeV");
   manager->CreateNtupleDColumn("py_GeV");
   manager->CreateNtupleDColumn("pz_GeV");

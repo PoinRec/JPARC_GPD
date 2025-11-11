@@ -17,6 +17,7 @@ class MySensitiveDetector : public G4VSensitiveDetector {
     ~MySensitiveDetector();
   private:
     virtual G4bool ProcessHits(G4Step *, G4TouchableHistory *);
+    G4int fNtupleID;  // Ntuple IDs: 0-FT1, 1-FT2, 2-DC1, 3-DC2, 4-RICH
 };
 
 #endif
