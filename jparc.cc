@@ -19,7 +19,7 @@ int main(int argc, char** argv) {
   runManager->SetUserInitialization(new MyActionInitialization());
   
   runManager->Initialize();
-
+  std::cout << "tesla: " << tesla << std::endl;
   runManager->BeamOn(10000);
 
   delete runManager;

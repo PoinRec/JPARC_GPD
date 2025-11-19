@@ -4,6 +4,8 @@ project(JPARC_E16_GPD)
 
 find_package(Geant4 REQUIRED ui_all vis_all)
 
+set(E16_GEANT4 "/data/tools/geant4/geant4-install/include/Geant4") # for CLHEP
+
 # ROOT
 find_package(ROOT REQUIRED COMPONENTS Core RIO Tree)
 

@@ -217,6 +217,33 @@ DetectorConstruction.cc.s:
 	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/DetectorConstruction.cc.s
 .PHONY : DetectorConstruction.cc.s
 
+E16ANA_MagneticFieldMap.o: E16ANA_MagneticFieldMap.cc.o
+
+.PHONY : E16ANA_MagneticFieldMap.o
+
+# target to build an object file
+E16ANA_MagneticFieldMap.cc.o:
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/E16ANA_MagneticFieldMap.cc.o
+.PHONY : E16ANA_MagneticFieldMap.cc.o
+
+E16ANA_MagneticFieldMap.i: E16ANA_MagneticFieldMap.cc.i
+
+.PHONY : E16ANA_MagneticFieldMap.i
+
+# target to preprocess a source file
+E16ANA_MagneticFieldMap.cc.i:
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/E16ANA_MagneticFieldMap.cc.i
+.PHONY : E16ANA_MagneticFieldMap.cc.i
+
+E16ANA_MagneticFieldMap.s: E16ANA_MagneticFieldMap.cc.s
+
+.PHONY : E16ANA_MagneticFieldMap.s
+
+# target to generate assembly for a file
+E16ANA_MagneticFieldMap.cc.s:
+	$(MAKE) -f CMakeFiles/jparc.dir/build.make CMakeFiles/jparc.dir/E16ANA_MagneticFieldMap.cc.s
+.PHONY : E16ANA_MagneticFieldMap.cc.s
+
 Generator.o: Generator.cc.o
 
 .PHONY : Generator.o
@@ -317,6 +344,9 @@ help:
 	@echo "... DetectorConstruction.o"
 	@echo "... DetectorConstruction.i"
 	@echo "... DetectorConstruction.s"
+	@echo "... E16ANA_MagneticFieldMap.o"
+	@echo "... E16ANA_MagneticFieldMap.i"
+	@echo "... E16ANA_MagneticFieldMap.s"
 	@echo "... Generator.o"
 	@echo "... Generator.i"
 	@echo "... Generator.s"

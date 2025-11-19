@@ -8,7 +8,7 @@ MyRunAction::~MyRunAction() {
 
 void MyRunAction::BeginOfRunAction(const G4Run *) {
   G4AnalysisManager *manager = G4AnalysisManager::Instance();
-  manager->OpenFile("output_JAM2.root");
+  manager->OpenFile("output.root");
   
   // FT1 ntuple
   manager->CreateNtuple("FT1", "FT1 Track and Energy");

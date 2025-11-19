@@ -10,9 +10,12 @@
 
 #include "G4Box.hh"
 
-#include "G4RotationMatrix.hh"
-
 #include "Detector.hh"
+
+#include <memory>
+
+class G4MagneticField;
+class G4FieldManager;
 
 class MyDetectorConstruction: public G4VUserDetectorConstruction {
   public:
@@ -27,6 +30,11 @@ class MyDetectorConstruction: public G4VUserDetectorConstruction {
     G4LogicalVolume *logicDC1;
     G4LogicalVolume *logicDC2;
     G4LogicalVolume *logicRICH;
+    G4LogicalVolume *logicMagRegion;
+
+    std::unique_ptr<G4MagneticField> fMagRegionField;
+    G4FieldManager *fMagRegionFieldManager;
+
     virtual void ConstructSDandField();
 };
 
